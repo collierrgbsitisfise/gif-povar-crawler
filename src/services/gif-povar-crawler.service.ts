@@ -55,10 +55,15 @@ class ParseGifPovarService {
       .each(function(i, arcticle) {
         const cookName = $(arcticle)
           .children()
-          .eq(0).text();
+          .eq(0)
+          .text();
         const postThumbnail = $(arcticle)
           .children()
           .eq(1);
+        const LinkToPost = $(postThumbnail)
+          .children()
+          .eq(1)
+          .attr("href");
         const videoWrapper = $(postThumbnail)
           .children()
           .eq(1);
@@ -77,7 +82,8 @@ class ParseGifPovarService {
         result.push({
           sourceVideo,
           sourceImg,
-          cookName
+          cookName,
+          LinkToPost
         });
       });
 
