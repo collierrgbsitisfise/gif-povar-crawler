@@ -13,7 +13,7 @@ const main = async () => {
         await db.connect();
     
         const PG = new ParseGifPovarService();
-        PG.setProxyServer('http://localhost:5555');
+        PG.setProxyServer('http://209.97.137.33:5555');
     
         for (let i=1; i<=totalPages; i++) {
             PG.setBaseUrl(`https://gif-povar.ru/page/${i}/`);
