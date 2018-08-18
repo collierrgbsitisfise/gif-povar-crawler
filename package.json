@@ -9,9 +9,17 @@
     "start": "nodemon dist/app.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"npm run watch-ts\" \"npm run start\"",
     "prod": "npm run build && npm run start",
-    "pm2-start": "pm2 start --name proxy-server npm -- run prod"
+    "pm2-start": "pm2 start --name git-povar-crawler npm -- run prod"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/cheerio": "^0.22.8",
+    "@types/request": "^2.47.1",
+    "@types/request-promise": "^4.1.42",
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
 }
