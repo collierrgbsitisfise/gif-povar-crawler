@@ -16,14 +16,20 @@
   "license": "ISC",
   "dependencies": {
     "@types/cheerio": "^0.22.8",
+    "@types/entities": "^1.1.0",
+    "@types/iconv-lite": "0.0.1",
     "@types/mongoose": "^5.2.6",
     "@types/node-cron": "^1.2.0",
     "@types/request": "^2.47.1",
     "@types/request-promise": "^4.1.42",
+    "@types/utf8": "^2.1.6",
     "cheerio": "^1.0.0-rc.2",
+    "entities": "^1.1.1",
+    "iconv-lite": "^0.4.23",
     "mongoose": "^5.2.9",
     "node-cron": "^1.2.1",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "utf8": "^3.0.0"
   }
 }
